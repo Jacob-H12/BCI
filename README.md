@@ -72,7 +72,7 @@ Download the `.gdf` files and place them in a `BCICIV_2a_gdf/` directory.
 ### Installation
 
 ```bash
-git clone https://github.com/HYN2004712/BCI.git
+git clone https://github.com/Jacob-H12/BCI.git
 cd BCI
 pip install -r requirements.txt
 ```
