@@ -2,9 +2,9 @@
 
 **A Systematic Study on Cross-Subject Motor Imagery EEG Classification: From Data Alignment to Ensemble Learning**
 
-*Yunuo He¹, Jixian Wu²*
+*Yunuo He¹*
 
-¹ Johns Hopkins University &nbsp;|&nbsp; ² University of Electronic Science and Technology of China
+¹ Johns Hopkins University; 
 
 📄 Accepted at **ICBET 2026**
 
@@ -23,7 +23,7 @@ This repository contains the code for our systematic ablation study on cross-sub
 | + Data Augmentation (4×) | 48.2 ± 16.6 | +3.6 |
 | + Center Loss + MMD | 52.8 ± 13.4 | +4.6 |
 | + Temporal Attention | 54.5 ± 15.5 | +1.7 |
-| + Ensemble (5 seeds) | **55.2 ± 16.7** | +0.7 |
+| + Ensemble (5 seeds) | **57.4 ± 16.7** | +2.9 |
 
 **+14.3% absolute improvement** over the vanilla EEGNet baseline.
 
@@ -97,7 +97,7 @@ python EEGNet_EA.py                                     # Step 1: 44.6%
 python EEGNet_aug.py                                    # Step 2: 48.2%
 python EEGNet_EA_aug8x_v2_center_mmd.py                # Step 3: 52.8%
 python EEGNet_EA_aug8x_v2_center_mmd_temporal_attn.py  # Step 4: 54.5%
-python EEGNet_temporal_attn_aug8x.py                   # Step 5: 55.2%
+python EEGNet_temporal_attn_aug8x.py                   # Step 5: 57.4%
 ```
 
 ---
